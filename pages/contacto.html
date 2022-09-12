@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../styles/style_pag.css">
+</head>
+
+<body>
+
+    <section class="section__header">
+
+        <header class="header">
+
+            <h1 class="title">CONTACTO</h1>
+
+            <div class="header__menu">
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item"><a href="/index.html"> Home </a></li>
+                        <li class="menu__item"><a href="./tienda.html"> Tienda </a></li>
+                        <li class="menu__item"><a href="./visitanos.html"> Visitanos</a></li>
+                        <li class="menu__item"><a href="./productos.html"> Productos</a></li>
+                        <li class="menu__item"><a href="./contacto.html"> Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+
+    <main>
+        <section class="section__contacto">
+            
+            <div class="contacto__div">
+                <form action="send.php" method="get" enctype="multipart/form-data">
+                    <h1 class="title_contacto-div">MENSAJE</h1>
+                    <textarea class="contacto__area" name="mensaje" cols="30" rows="10"
+                        placeholder="Escriba su mensaje, reclamo, consulta..."></textarea>
+                    <input class="contacto__box" type="text" placeholder="Email o whatsap" />
+                    <button class="contacto__box" type="submit">Enviar mensaje..</button>
+                </form>
+
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>

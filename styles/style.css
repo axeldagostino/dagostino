@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2? family= Ubuntu:wght@300;500;700 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://images.pexels.com/photos/172292/pexels-photo-172292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 );
+    /* background-size: cover; */
+}
+
+.section__header {
+    display: flex;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.title {
+    margin: 0 auto;
+    padding-block: 50px;
+}
+
+.title .logo {
+    box-shadow: 0px 0px 14px 9px rgba(0, 0, 0, 0.88);
+}
+
+.header__menu {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.638);
+    padding-block: 1rem;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.header__menu .menu {
+
+    list-style: none;
+    display: flex;
+    font-family: 'Ubuntu';
+    font-size: 1.7rem;
+    font-weight: bolder;
+    gap: 4rem;
+    letter-spacing: 5px;
+}
+
+.menu__item a {
+    text-shadow: -1px 3px 2px rgb(19, 18, 9);
+    ;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* *********GRID********* */
+
+.grid {
+    display: grid;
+    grid-template-columns: 0.7fr;
+    grid-template-rows: 0.5fr 0.2fr 0.5fr;
+    grid-template-areas:
+        "item1 "
+        "item2"
+        "item3";
+    gap: 2rem;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.grid__item {
+    background-position: center center;
+
+}
+
+.grid__item1 {
+    grid-area: item1;
+    font-size: 2.5rem;
+    color: rgb(247, 247, 247);
+    font-family: 'reboto', cursive;
+    text-shadow: 1px 0px 7px rgba(0, 0, 0, 1);
+    box-shadow: -1px 4px 14px 1px rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.265);
+    margin-block: 50px;
+}
+
+.grid__item2 {
+    grid-area: item2;
+    letter-spacing: 5px;
+    font-family: 'kanit';
+    font-size: 3rem;
+    color: #ffaf50;
+    text-shadow: 4px 4px 2px rgb(0, 0, 0);
+    border: 4px outset #e6c614;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    width: 80%;
+    padding-block: 10px;
+    margin: auto;
+}
+
+.grid__item3 {
+    grid-area: item3;
+    background-image: url(../assets/tanonoticias.jpg);
+    width: 400px;
+    height: 400px;
+    border-radius: 50px;
+    margin-left: 5rem;
+    position: relative;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.75);
+    margin-top: 20px;
+
+}
+
+.scrolls {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 10rem;
+    left: 30rem;
+}
+
+.scroll {
+    width: 15px;
+    height: 15px;
+    background-color: darkgrey;
+    border-radius: 50%;
+}
+
+.scroll-y {
+    background-color: #ffaf50;
+}
+
+/* ******REDES SOCIALES****** */
+
+fieldset {
+    display: flex;
+    text-align: center;
+    border: 8px double #ffffff;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding-block: 10px;
+    margin-bottom: 40px;
+
+}
+
+.legend {
+    font-size: 2rem;
+    padding-inline: 10px;
+    font-family: 'reboto', cursive;
+    font-weight: bold;
+    color: #ffaf50;
+    text-shadow: 4px 4px 2px rgb(0, 0, 0);
+
+}
+
+
+.redes {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.redes-img {
+    height: 100px;
+}
+
+/* ******MEDIA QUERIES************ */
+@media screen and (max-width: 480px) {
+
+    .title .logo {
+        width: 80%;
+
+    }
+
+    .header__menu {
+        justify-content: flex-start;
+        padding-left: 10px;
+        width: 480px
+    }
+
+    .header__menu .menu {
+        font-size: 20px;
+        gap: 1.5rem;
+        letter-spacing: 0;
+    }
+
+    .grid {
+        margin-left: 10px;
+    }
+
+    .grid__item1{
+        font-size: 1.6rem;
+        margin-block: 10px;
+    }
+
+.grid__item2{
+    letter-spacing: 3px;
+    font-size: 2rem;
+    width: 100%; 
+}
+.grid__item3{
+   margin-left: 0;
+}
+
+.scrolls{
+    position: absolute;
+    bottom: -4rem;
+    left: 11rem;
+}
+
+.legend{
+    font-size: 1rem;
+}
+.redes-img {
+    height: 60px;
+}
+
+}
