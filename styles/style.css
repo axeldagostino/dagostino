@@ -10,7 +10,7 @@
 
 body {
     background-image: url(https://images.pexels.com/photos/172292/pexels-photo-172292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 );
-    /* background-size: cover; */
+
 }
 
 .section__header {
@@ -30,6 +30,10 @@ body {
 .title {
     margin: 0 auto;
     padding-block: 50px;
+}
+
+.title :hover {
+    transform: scale(1.1) translatey(-10px);
 }
 
 .title .logo {
@@ -111,6 +115,14 @@ body {
     width: 80%;
     padding-block: 10px;
     margin: auto;
+
+}
+
+.grid__item2:hover {
+
+    background: rgb(1, 5, 11);
+    background: radial-gradient(circle, rgba(1, 5, 11, 0.8575805322128851) 27%, rgba(121, 9, 20, 0.584) 61%);
+
 }
 
 .grid__item3 {
@@ -124,6 +136,10 @@ body {
     box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.75);
     margin-top: 20px;
 
+}
+
+.grid__item3:hover {
+    transform: scale(1.1)
 }
 
 .scrolls {
@@ -204,31 +220,33 @@ fieldset {
         margin-left: 10px;
     }
 
-    .grid__item1{
+    .grid__item1 {
         font-size: 1.6rem;
         margin-block: 10px;
     }
 
-.grid__item2{
-    letter-spacing: 3px;
-    font-size: 2rem;
-    width: 100%; 
-}
-.grid__item3{
-   margin-left: 0;
-}
+    .grid__item2 {
+        letter-spacing: 3px;
+        font-size: 2rem;
+        width: 100%;
+    }
 
-.scrolls{
-    position: absolute;
-    bottom: -4rem;
-    left: 11rem;
-}
+    .grid__item3 {
+        margin-left: 0;
+    }
 
-.legend{
-    font-size: 1rem;
-}
-.redes-img {
-    height: 60px;
-}
+    .scrolls {
+        position: absolute;
+        bottom: -4rem;
+        left: 11rem;
+    }
+
+    .legend {
+        font-size: 1rem;
+    }
+
+    .redes-img {
+        height: 60px;
+    }
 
 }
