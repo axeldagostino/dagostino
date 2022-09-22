@@ -245,9 +245,9 @@ fieldset{
 
 .grid__productos {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-        "producto1 producto2 producto3 producto4 producto5";
+        "producto1 producto2 producto3 producto4";
     padding-bottom: 100px;
     column-gap: 50px;
     margin-top: 100px;
@@ -276,10 +276,6 @@ fieldset{
     grid-area: producto4;
 }
 
-.grid__product5 {
-    grid-area: producto5;
-
-}
 
 .footer__producto {
     background-color: #d9cc16;
@@ -350,22 +346,11 @@ fieldset{
 
     .title {
         font-size: 3rem;
-        width: 90%;
+        width: auto;
         padding-left: 20px;
 
     }
 
-    .header__menu {
-        justify-content: flex-start;
-        padding-left: 10px;
-        width: 480px
-    }
-
-    .header__menu .menu {
-        font-size: 20px;
-        gap: 1.5rem;
-        letter-spacing: 0;
-    }
 
     .grid__table {
         width: 480px;
@@ -406,4 +391,37 @@ fieldset{
         width: 480px;
     }
 
+    /* **********PRODUCTOS MEDIA********** */
+    
+    .grid__productos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,1fr) ;
+        grid-template-areas:
+            "producto1 producto2"
+             "producto3 producto4";
+        padding-bottom: 50px;
+        column-gap: 80px;
+        row-gap: 90px;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .product-img{
+        width: 190px;
+    }
+
+    .footer__producto {
+        gap: 10px;
+        padding-left: 10px;
+        margin-block: 50px;
+    }
+
+    .text-qr {
+        font-size: 2rem;
+        font-family: 'kanit';
+        text-shadow: -3px 3px 8px rgba(0, 0, 0, 1);
+        color: #800707;
+        letter-spacing: 1px;
+    }
 }
