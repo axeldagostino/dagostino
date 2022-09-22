@@ -1,0 +1,32 @@
+fieldset {
+    display: flex;
+    text-align: center;
+    border: 8px double $colorSecundary;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding-block: 10px;
+    margin-bottom: 40px;
+
+    .legend {
+        font-size: 2rem;
+        padding-inline: 10px;
+        font-weight: bold;
+        color: $colorPrimaryBeta;
+        text-shadow: 4px 4px 2px rgb(0, 0, 0); 
+    }
+
+    .redes {
+        display: flex;
+        gap: 160px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+
+        .redes-img {
+            height: 70px;
+        }
+    }
+    
+    
+
+}

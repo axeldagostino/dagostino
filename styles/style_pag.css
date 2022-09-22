@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 
 }
 
-/* *********ENCABEZADO TIENDA******** */
+/* *********nav & title******* */
 
 .section__header {
     display: flex;
@@ -22,7 +23,6 @@ body {
 }
 
 .header {
-    width: 100%;
     text-align: center;
     margin: 0 auto;
     align-items: center;
@@ -31,6 +31,7 @@ body {
 }
 
 .title {
+    width: auto;
     font-family: 'Ubuntu';
     font-size: 8rem;
     font-weight: bold;
@@ -39,39 +40,33 @@ body {
     text-shadow: -3px 3px 8px rgba(0, 0, 0, 1);
     box-shadow: 2px 7px 8px 2px rgba(0, 0, 0, 1);
     border: 8px ridge #ffe450;
-    width: 50%;
     margin: 0 auto;
     margin-block: 30px;
 
 }
 
-.header__menu {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.638);
+.header__menu{
     width: 100%;
-    padding-block: 1rem;
-    justify-content: center;
-    color: #ffffff;
 }
 
-.header__menu .menu {
-    list-style: none;
-    display: flex;
+.navbar-nav a {
+    color: #e6c614;
+    font-size: 2rem;
     font-family: 'Ubuntu';
-    font-size: 1.7rem;
-    font-weight: bolder;
-    gap: 4rem;
-    letter-spacing: 5px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 4px 4px 2px rgba(0,0,0,1);
 }
 
-.menu__item a {
-    text-shadow: -1px 3px 2px rgb(19, 18, 9);
-    ;
-    text-decoration: none;
+.navbar-nav :hover{
     color: #ffffff;
+    text-shadow: 4px 4px 2px rgba(0,0,0,1);
+    transform: scale(1.1) translatey(-5px);
+
 }
 
 
+/* *********ENCABEZADO TIENDA******** */
 /* **************GRID************ */
 
 .grid__tienda {
@@ -226,30 +221,35 @@ fieldset {
     font-weight: bold;
     color: #ffaf50;
     text-shadow: 4px 4px 2px rgb(0, 0, 0);
+    width: 100vh;
 
 }
 
 
 .redes {
     display: flex;
-    gap: 30px;
+    gap: 160px;
     margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 .redes-img {
-    height: 100px;
+    height: 70px;
 }
 
 /* ***********HOJA PRODUCTOS**************** */
+
+fieldset{
+    width: 100%;
+}
 
 .grid__productos {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas:
         "producto1 producto2 producto3 producto4 producto5";
-    padding-inline: 100px;
     padding-bottom: 100px;
-    column-gap: 20px;
+    column-gap: 50px;
     margin-top: 100px;
     text-align: center;
 }

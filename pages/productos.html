@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
     <link rel="stylesheet" href="../styles/style_pag.css">
 </head>
 
@@ -18,14 +20,24 @@
             <h1 class="title">Nuestros <br> Productos</h1>
 
             <div class="header__menu">
-                <nav>
-                    <ul class="menu">
-                        <li class="menu__item"><a href="/index.html"> Home </a></li>
-                        <li class="menu__item"><a href="./tienda.html"> Tienda </a></li>
-                        <li class="menu__item"><a href="./visitanos.html"> Visitanos</a></li>
-                        <li class="menu__item"><a href="./productos.html"> Productos</a></li>
-                        <li class="menu__item"><a href="./contacto.html"> Contacto</a></li>
-                    </ul>
+                <nav class="navbar navbar-expand-lg bg-dark  bg-opacity-50">
+                    <div class="container-fluid ">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav mx-auto gap-5 ">
+                                <a class="nav-link " href="../index.html">Home </a>
+                                <a class="nav-link " href="tienda.html">Tienda</a>
+                                <a class="nav-link " href="visitanos.html">Visitanos</a>
+                                <a class="nav-link active text-light fw-bold" href="productos.html">Productos</a>
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+
+                            </div>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -33,10 +45,10 @@
 
     <main>
 
-        <fieldset>
-            <legend class="legend">Nuestros Productos</legend>
+        <fieldset class="border p-2">
+            <legend class="legend float-none w-auto p-2  ">Nuestros Productos</legend>
 
-            <section class="grid__productos">
+            <section class="grid__productos mx-auto">
 
                 <div class="grid__product1 "><img class="product-img"
                         src="https://scontent.fepa6-1.fna.fbcdn.net/v/t39.30808-6/297262468_1974781766048150_6262810302709331555_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFwhuUrWPtOj5klWNZFPW5Gx6SEhLaADJ7HpISEtoAMniAItB4D_Bq06lm8SHtftKa_jrL8VcyUuK0hjAhdvwOE&_nc_ohc=PdYo7PT7oRcAX-4E2CJ&tn=-nfZ4Ofqe9KTBDaF&_nc_ht=scontent.fepa6-1.fna&oh=00_AT8goOp8AbnVGtRaBy4yQ_w5TkbFIw4dO4PgyP_Rgw9bcg&oe=631C97B9"
@@ -59,10 +71,10 @@
         </fieldset>
 
 
-        <fieldset>
-            <legend class="legend">Nuestras Ofertas</legend>
+        <fieldset class="border p-2">
+            <legend class="legend float-none w-auto p-2">Nuestras Ofertas</legend>
 
-            <section class="grid__productos">
+            <section class="grid__productos mx-auto ">
 
                 <div class="grid__product1 "><img class="product-img"
                         src="https://scontent.fepa6-1.fna.fbcdn.net/v/t39.30808-6/300371134_1988286381364355_4229181488017113401_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFU8h0-KXR2PWfK3vsBqHQ3p5Qmm3vsTOinlCabe-xM6PovBoUCaCVm5WvsGgl_5XQAKLbiw1snj7zUCZwA7UHu&_nc_ohc=hQt8dn9_mosAX9OATLU&tn=-nfZ4Ofqe9KTBDaF&_nc_ht=scontent.fepa6-1.fna&oh=00_AT8BDYuc71OGnqXeEcTmyaKFqYQgJGB70A3PlyI8C0eoXQ&oe=631AEBAA"
@@ -94,6 +106,10 @@
             <h1 class="text-qr"> Escaneame y enterate de las novedades</h1>
         </div>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

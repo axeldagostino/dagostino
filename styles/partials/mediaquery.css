@@ -1,0 +1,35 @@
+/* ******MEDIA QUERIES************ */
+@media screen and (max-width: 480px) {
+  .title .logo {
+    width: 80%;
+  }
+  .grid {
+    margin-left: 10px;
+  }
+  .grid .grid__item1 {
+    font-size: 1.6rem;
+    margin-block: 10px;
+  }
+  .grid .grid__item2 {
+    letter-spacing: 3px;
+    font-size: 2rem;
+    width: 100%;
+  }
+  .grid .grid__item3 {
+    margin-left: 0;
+  }
+  .scrolls {
+    position: absolute;
+    bottom: -4rem;
+    left: 11rem;
+  }
+  .legend {
+    font-size: 1rem;
+  }
+  .legend .redes {
+    gap: 10px;
+  }
+  .legend .redes .redes-img {
+    height: 60px;
+  }
+}/*# sourceMappingURL=mediaquery.css.map */

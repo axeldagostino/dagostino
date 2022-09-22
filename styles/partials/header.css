@@ -1,0 +1,30 @@
+header {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+}
+header .title {
+  margin: 0 auto;
+  padding-block: 50px;
+}
+header .title .title :hover {
+  transform: scale(1.1) translatey(-10px);
+}
+header .title .title .logo {
+  box-shadow: 0px 0px 14px 9px rgba(0, 0, 0, 0.88);
+}
+header .navbar-nav a {
+  color: #e6c614;
+  font-size: 2rem;
+  font-family: "Ubuntu";
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-shadow: 4px 4px 2px rgb(0, 0, 0);
+}
+header .navbar-nav a .navbar-nav :hover {
+  color: #ffffff;
+  text-shadow: 4px 4px 2px rgb(0, 0, 0);
+  transform: scale(1.1) translatey(-5px);
+}/*# sourceMappingURL=header.css.map */

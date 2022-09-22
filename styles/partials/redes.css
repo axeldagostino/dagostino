@@ -1,0 +1,18 @@
+fieldset {
+  display: flex;
+  text-align: center;
+  border: 8px double #ffffff;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-block: 10px;
+  margin-bottom: 40px;
+}
+
+.legend {
+  font-size: 2rem;
+  padding-inline: 10px;
+  font-weight: bold;
+  color: #ffaf50;
+  text-shadow: 4px 4px 2px rgb(0, 0, 0);
+}/*# sourceMappingURL=redes.css.map */
