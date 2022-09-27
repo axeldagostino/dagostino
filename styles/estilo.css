@@ -41,6 +41,19 @@ header .navbar-nav :hover {
   text-shadow: 4px 4px 2px rgb(0, 0, 0);
   transform: scale(1.1) translatey(-5px);
 }
+header .title__hojas {
+  width: auto;
+  font-family: "Ubuntu" cursive;
+  font-size: 8rem;
+  font-weight: bold;
+  letter-spacing: 20px;
+  color: rgb(255, 255, 255);
+  text-shadow: -3px 3px 8px rgb(0, 0, 0);
+  box-shadow: 2px 7px 8px 2px rgb(0, 0, 0);
+  border: 8px ridge #e6c614;
+  margin: 0 auto;
+  margin-block: 30px;
+}
 
 .grid {
   display: grid;
@@ -128,6 +141,176 @@ header .navbar-nav :hover {
 }
 .grid .scrolls .scroll-y {
   background-color: #ffaf50;
+}
+
+.grid__tienda {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "tabla1" "tabla2";
+  margin-top: 10px;
+}
+.grid__tienda .grid__table .table1 {
+  grid-area: tabla1;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+.grid__tienda .grid__table .table2 {
+  grid-area: tabla2;
+  width: 70%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+.grid__tienda .tienda__table {
+  margin: 0 auto;
+  text-align: center;
+  margin-block: 50px;
+  padding-block: 60px;
+  padding-inline: 150px;
+  border: 11px double #ffffff;
+}
+.grid__tienda .tienda__table .tienda__jamon-img {
+  width: 160px;
+}
+.grid__tienda .tienda__table .tienda__th {
+  padding-inline: 50px;
+  font-family: "Kanit";
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-shadow: -1px 3px 2px rgb(0, 0, 0);
+}
+.grid__tienda .tienda__table .button__comprar {
+  display: flex;
+  margin-top: 50px;
+  font-family: "Reboto", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #e6c614;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px;
+  box-shadow: 2px 7px 8px 2px rgb(0, 0, 0);
+  text-shadow: -1px 3px 2px rgb(0, 0, 0);
+}
+
+.grid__visitanos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "caja1 caja1" "caja2 caja3";
+  margin-block: 10px;
+}
+.grid__visitanos .grid__visita {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 10px ridge #ffaf50;
+  background-color: rgba(0, 0, 0, 0.373);
+}
+.grid__visitanos .grid__visita1 {
+  grid-area: caja1;
+  background-color: #e6c614;
+  height: 335px;
+  width: 580px;
+  margin-top: 110px;
+}
+.grid__visitanos .grid__visita2 {
+  grid-area: caja2;
+  font-family: "Ubuntu" cursive;
+  background-color: rgba(0, 0, 0, 0.39);
+  font-size: 1.2rem;
+  padding: 15px;
+  color: #ffffff;
+}
+.grid__visitanos .grid__visita3 {
+  grid-area: caja3;
+  background-color: rgba(0, 0, 0, 0.39);
+  font-family: "Ubuntu" cursive;
+  font-size: 1.2rem;
+  padding: 15px;
+  color: #ffffff;
+}
+
+.aborder {
+  width: 80%;
+}
+.aborder .grid__productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "producto1 producto2 producto3 producto4";
+  padding-bottom: 100px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  margin-top: 100px;
+  text-align: center;
+}
+.aborder .grid__productos .grid__product1 {
+  grid-area: producto1;
+}
+.aborder .grid__productos .grid__product2 {
+  grid-area: producto2;
+}
+.aborder .grid__productos .grid__product3 {
+  grid-area: producto3;
+}
+.aborder .grid__productos .grid__product4 {
+  grid-area: producto4;
+}
+.aborder .grid__productos .product-img {
+  border-radius: 30px;
+}
+
+.footer__producto {
+  background-color: #e6c614;
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  padding-left: 40px;
+  margin-block: 70px;
+}
+.footer__producto .product-img:hover {
+  transform: scale(1.1);
+}
+.footer__producto .text-qr {
+  font-size: 3rem;
+  font-family: "Kanit";
+  text-shadow: -3px 3px 8px rgb(0, 0, 0);
+  color: #800707;
+  letter-spacing: 2px;
+}
+
+.section__contacto {
+  display: flex;
+  padding-block: 50px;
+}
+.section__contacto .contacto__div {
+  margin: 0 auto;
+  padding: 90px;
+  width: 500px;
+  color: #ffffff;
+  border: 8px ridge #ffffff;
+  background-color: rgba(12, 14, 13, 0.4862745098);
+  text-align: center;
+}
+.section__contacto .contacto__div .title_contacto-div {
+  font-family: "Kanit";
+  font-size: 4rem;
+  color: #e6c614;
+  text-shadow: 1px 4px 5px rgb(0, 0, 0);
+}
+.section__contacto .contacto__div .contacto__area {
+  margin-block: 40px;
+  font-size: 1rem;
+}
+.section__contacto .contacto__div .contacto__box {
+  font-size: 1.5rem;
+  margin-block: 20px;
 }
 
 fieldset {

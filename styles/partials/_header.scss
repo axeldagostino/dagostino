@@ -37,6 +37,20 @@ header {
 
     }
 
-
+//titulo de hojas.
+    .title__hojas {
+        width: auto;
+        font-family: $fontUbuntu;
+        font-size: 8rem;
+        font-weight: bold;
+        letter-spacing: 20px;
+        color: rgb(255, 255, 255);
+        text-shadow: -3px 3px 8px rgba(0, 0, 0, 1);
+        box-shadow: 2px 7px 8px 2px rgba(0, 0, 0, 1);
+        border: 8px ridge $colorPrimary;
+        margin: 0 auto;
+        margin-block: 30px;
+    
+    }
 
 }
