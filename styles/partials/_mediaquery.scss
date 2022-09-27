@@ -1,0 +1,168 @@
+/* ******MEDIA QUERIES************ */
+
+// INDEX
+@media screen and (max-width: 480px) {
+
+    .title .logo {
+        width: 80%;
+
+    }
+
+    .grid {
+        margin-left: 10px;
+
+        & .grid__item1 {
+            font-size: 1.6rem;
+            margin-block: 10px;
+        }
+
+        & .grid__item2 {
+            letter-spacing: 3px;
+            font-size: 2rem;
+            width: 100%;
+        }
+
+        & .grid__item3 {
+            margin-left: 0;
+        }
+
+        .scrolls {
+            position: absolute;
+            bottom: -5rem;
+            left: 11rem;
+        }
+    
+    }
+
+
+
+    // REDES //
+    fieldset {
+        width: 100%;
+        margin-top: 100px;
+        padding-block: 10px;
+        margin-bottom: 40px;
+    
+        .legend {
+            font-size: 2rem;
+            padding-inline: 0px;
+        }
+    
+        .redes {
+            gap: 50px;
+            padding-bottom: 10px;
+    
+            .redes-img {
+                height: 70px;
+            }
+        }
+        
+        
+    
+    }
+
+    //TIENDA MEDIAQUERY
+    /* **********TIENDA MEDIA********** */
+
+    header .title__hojas {
+        letter-spacing: 3px;
+        font-size: 4rem;
+        width: auto;
+        // padding-left: 20px;
+
+    }
+
+    .grid__table {
+        width: 480px;
+        margin: 0;
+
+        .tienda__table {
+            margin-block: 10px;
+            padding-block: 15px;
+            padding-inline: 0;
+
+            .tienda__th {
+                font-size: 1rem;
+                padding-inline: 20px;
+            }
+
+            .button__comprar {
+                font-size: 1rem;
+            }
+        }
+
+
+    }
+
+    /* **********VISITANOS MEDIA********** */
+
+    .grid__visitanos {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+
+        .grid__visita1 {
+            width: 90%;
+            margin-top: 10px;
+
+            .video {
+
+                width: 100%;
+            }
+        }
+
+    }
+
+    /* **********PRODUCTOS MEDIA********** */
+    .aborder {
+     width: 100%;
+     margin-top: 10px;
+        .grid__productos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "producto1 producto2"
+                "producto3 producto4";
+            padding-bottom: 15px;
+            column-gap: 70px;
+            row-gap: 90px;
+            margin-top: 20px;
+            text-align: center;
+
+
+            .product-img {
+                width: 190px;
+            }
+
+        }
+    }
+
+    .footer__producto {
+        gap: 10px;
+        padding-left: 10px;
+        margin-block: 50px;
+
+        .text-qr {
+            font-size: 2rem;
+            font-family: 'kanit';
+            text-shadow: -3px 3px 8px rgba(0, 0, 0, 1);
+            color: #800707;
+            letter-spacing: 1px;
+        }
+    }
+
+    .section__contacto{
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+   
+    
+    .contacto__div{
+        width: 90%;
+        padding: 0;
+    }
+}
+    
+    
+}

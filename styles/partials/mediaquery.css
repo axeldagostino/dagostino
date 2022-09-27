@@ -32,4 +32,26 @@
   .legend .redes .redes-img {
     height: 60px;
   }
+  /* **********TIENDA MEDIA********** */
+  header .title__hojas {
+    font-size: 1rem;
+    width: auto;
+    padding-left: 20px;
+  }
+  .grid__table {
+    width: 480px;
+    margin: 0;
+  }
+  .grid__table .tienda__table {
+    margin-block: 10px;
+    padding-block: 15px;
+    padding-inline: 0;
+  }
+  .grid__table .tienda__table .tienda__th {
+    font-size: 1rem;
+    padding-inline: 20px;
+  }
+  .grid__table .tienda__table .button__comprar {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=mediaquery.css.map */

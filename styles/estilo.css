@@ -360,18 +360,102 @@ fieldset .redes .redes-img {
   .grid .grid__item3 {
     margin-left: 0;
   }
-  .scrolls {
+  .grid .scrolls {
     position: absolute;
-    bottom: -4rem;
+    bottom: -5rem;
     left: 11rem;
   }
-  .legend {
+  fieldset {
+    width: 100%;
+    margin-top: 100px;
+    padding-block: 10px;
+    margin-bottom: 40px;
+  }
+  fieldset .legend {
+    font-size: 2rem;
+    padding-inline: 0px;
+  }
+  fieldset .redes {
+    gap: 50px;
+    padding-bottom: 10px;
+  }
+  fieldset .redes .redes-img {
+    height: 70px;
+  }
+  /* **********TIENDA MEDIA********** */
+  header .title__hojas {
+    letter-spacing: 3px;
+    font-size: 4rem;
+    width: auto;
+  }
+  .grid__table {
+    width: 480px;
+    margin: 0;
+  }
+  .grid__table .tienda__table {
+    margin-block: 10px;
+    padding-block: 15px;
+    padding-inline: 0;
+  }
+  .grid__table .tienda__table .tienda__th {
+    font-size: 1rem;
+    padding-inline: 20px;
+  }
+  .grid__table .tienda__table .button__comprar {
     font-size: 1rem;
   }
-  .legend .redes {
-    gap: 10px;
+  /* **********VISITANOS MEDIA********** */
+  .grid__visitanos {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
   }
-  .legend .redes .redes-img {
-    height: 60px;
+  .grid__visitanos .grid__visita1 {
+    width: 90%;
+    margin-top: 10px;
+  }
+  .grid__visitanos .grid__visita1 .video {
+    width: 100%;
+  }
+  /* **********PRODUCTOS MEDIA********** */
+  .aborder {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .aborder .grid__productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "producto1 producto2" "producto3 producto4";
+    padding-bottom: 15px;
+    -moz-column-gap: 70px;
+         column-gap: 70px;
+    row-gap: 90px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .aborder .grid__productos .product-img {
+    width: 190px;
+  }
+  .footer__producto {
+    gap: 10px;
+    padding-left: 10px;
+    margin-block: 50px;
+  }
+  .footer__producto .text-qr {
+    font-size: 2rem;
+    font-family: "kanit";
+    text-shadow: -3px 3px 8px rgb(0, 0, 0);
+    color: #800707;
+    letter-spacing: 1px;
+  }
+  .section__contacto {
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .section__contacto .contacto__div {
+    width: 90%;
+    padding: 0;
   }
 }/*# sourceMappingURL=estilo.css.map */

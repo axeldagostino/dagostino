@@ -5,84 +5,16 @@
 
     /* **********TIENDA MEDIA********** */
 
-    .title {
-        font-size: 3rem;
-        width: auto;
-        padding-left: 20px;
-
-    }
-
-
-    .grid__table {
-        width: 480px;
-        margin: 0;
-
-    }
-
-    .tienda__table {
-        margin-block: 10px;
-        padding-block: 15px;
-        padding-inline: 0;
-    }
-
-    .tienda__th {
-        font-size: 1rem;
-        padding-inline: 20px;
-    }
-
-    .button__comprar {
-        font-size: 1rem;
-    }
+    
 
     /* **********VISITANOS MEDIA********** */
 
-    .grid__visitanos {
-        display: flex;
-        flex-direction: column;
-        row-gap: 40px;
-    }
-
-    .grid__visita1 {
-        display: none;
-    }
-
-    .grid__visita-mobile {
-        display: block;
-        height: 335px;
-        width: 480px;
-    }
 
     /* **********PRODUCTOS MEDIA********** */
     
-    .grid__productos {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2,1fr) ;
-        grid-template-areas:
-            "producto1 producto2"
-             "producto3 producto4";
-        padding-bottom: 50px;
-        column-gap: 80px;
-        row-gap: 90px;
-        margin-top: 80px;
-        text-align: center;
+
+
+ 
+
     }
 
-    .product-img{
-        width: 190px;
-    }
-
-    .footer__producto {
-        gap: 10px;
-        padding-left: 10px;
-        margin-block: 50px;
-    }
-
-    .text-qr {
-        font-size: 2rem;
-        font-family: 'kanit';
-        text-shadow: -3px 3px 8px rgba(0, 0, 0, 1);
-        color: #800707;
-        letter-spacing: 1px;
-    }
-}
