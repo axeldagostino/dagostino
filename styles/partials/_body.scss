@@ -1,16 +1,17 @@
+//body index
 .grid {
     display: grid;
-    grid-template-columns: 0.7fr;
-    grid-template-rows: 0.5fr 0.2fr 0.5fr;
+    grid-template-columns: 0.65fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
-        "item1 "
-        "item2"
-        "item3";
+        "item1 item2"
+        "item1 item3";
     gap: 2rem;
-    margin-top: 50px;
+    margin-top: 0px;
     text-align: center;
     align-items: center;
     justify-content: center;
+
 
     .grid__item {
         background-position: center center;
@@ -18,39 +19,57 @@
 
     .grid__item1 {
         grid-area: item1;
-        background-color: rgba(0, 0, 0, 0.265);
-        box-shadow: -1px 4px 14px 1px rgba(0, 0, 0, 0.95);
-        margin-block: 50px;
-        padding-block: 10px;
+        background-color: $colorfound;
+        margin-top: 40px;
+        width: 60%;
+        padding-block: 30px;
+        margin-left: 180px;
+        border-top: 9px dotted #000;
+        border-right: 4px double $colorPrimaryBeta;
+        border-bottom: 4px double $colorPrimaryBeta;
+        border-left: 4px double $colorPrimaryBeta;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
 
         & h4 {
             font-size: 3rem;
             color: $colorSecundary;
-            text-shadow: 1px 0px 7px rgba(0, 0, 0, 1);
+            text-shadow: $textshadow;
+            font-family: $fontKanit;
+
+        }
+
+        &:hover {
+
+            background: rgb(1, 5, 11);
+            background: radial-gradient(circle, rgb(208, 24, 24) 27%, rgba(121, 9, 20, 0.584) 61%);
 
         }
     }
 
     .grid__item2 {
         grid-area: item2;
-        border: 4px outset $colorPrimary;
-        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        border: 4px double $colorPrimaryBeta;
         width: 80%;
         padding-block: 10px;
-        margin: auto;
+        margin-top: 5px;
+        margin-right: 20rem;
+        background-color: $colorfound;
+
 
         & h5 {
+            font-family: $fontRoboto;
             letter-spacing: 5px;
             font-weight: bold;
             font-size: 3rem;
-            color: $colorPrimaryBeta;
-            text-shadow: 4px 4px 2px rgb(0, 0, 0);
+            color: $colorSecundary;
+            text-shadow: $textshadow;
         }
 
         &:hover {
 
             background: rgb(1, 5, 11);
-            background: radial-gradient(circle, rgba(208, 24, 24, 0.553) 27%, rgba(121, 9, 20, 0.584) 61%);
+            background: radial-gradient(circle, rgb(208, 24, 24) 27%, rgba(121, 9, 20, 0.584) 61%);
 
         }
 
@@ -63,20 +82,13 @@
         height: 400px;
         border-radius: 50px;
         margin-left: 15rem;
+        margin-top: -30px;
         position: relative;
         box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.75);
-        margin-top: 20px;
+        border: 4px double rgb(255, 82, 82);
 
         &:hover {
             transform: scale(1.1)
-        }
-
-    }
-
-    //NO ME ANDA ESTA COSA////////
-    @for $item from 1 through 3 {
-        .grid__item#{$item} {
-            animation-delay: $item*0.5s;
         }
 
     }
@@ -101,6 +113,98 @@
     }
 
 }
+
+.stars {
+    display: flex;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: -30px;
+    margin-bottom: 50px;
+
+    .borde_stars {
+        min-width: 100%;
+        height: 40vh;
+        border-top: 10px double $colorPrimary;
+        border-right: none;
+        border-bottom: 10px double$colorPrimary;
+        border-left: none;
+        filter: drop-shadow(0px 0px 5px rgb(197, 16, 16));
+        font-family: $fontKanit;
+
+
+        .estrella {
+            position: relative;
+            display: block;
+            width: 0px;
+            height: 0px;
+            margin: 50px 0;
+            color: #0464e2;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid $colorPrimary;
+            transform: rotate(35deg);
+            margin-left: 100px;
+    
+
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -45px;
+                left: -65px;
+                display: block;
+                height: 0;
+                width: 0;
+                border-left: 30px solid transparent;
+                border-right: 30px solid transparent;
+                border-bottom: 80px solid $colorPrimary;
+                transform: rotate(-35deg);
+
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 3px;
+                left: -105px;
+                display: block;
+                width: 0px;
+                height: 0px;
+                border-left: 100px solid transparent;
+                border-right: 100px solid transparent;
+                border-bottom: 70px solid $colorPrimary;
+                transform: rotate(-70deg);
+
+            }
+
+            .nick {
+
+                transform: rotate(326deg);
+                top: 135px;
+                padding-left: 20px;
+                position: absolute;
+                color: $colorSecundary;
+                text-shadow: $textshadow;
+
+            }
+
+        }
+    }
+
+
+}
+
+.formulario {
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.75);
+    padding :15px;
+    border: 7px double $colorPrimary;
+    font-family: $fontRoboto;
+
+}
+
+
 
 // HOJA TIENDA //
 .grid__tienda {
@@ -301,25 +405,25 @@
         text-align: center;
 
         .title_contacto-div {
-            font-family:$fontKanit;
+            font-family: $fontKanit;
             font-size: 4rem;
-            color:$colorPrimary;
+            color: $colorPrimary;
             text-shadow: 1px 4px 5px rgba(0, 0, 0, 1);
-        
+
         }
 
         .contacto__area {
             margin-block: 40px;
             font-size: 1rem;
         }
-        
+
         .contacto__box {
             font-size: 1.5rem;
             margin-block: 20px;
-        
-        
+
+
         }
-    
+
     }
 
 }

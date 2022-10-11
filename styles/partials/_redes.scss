@@ -13,20 +13,21 @@ fieldset {
         padding-inline: 10px;
         font-weight: bold;
         color: $colorPrimaryBeta;
-        text-shadow: 4px 4px 2px rgb(0, 0, 0); 
+        text-shadow: 4px 4px 2px rgb(0, 0, 0);
     }
 
     .redes {
         display: flex;
         gap: 160px;
         margin: 0 auto;
-        padding-bottom: 10px;
+        padding-bottom: 25px;
 
         .redes-img {
             height: 70px;
         }
+
     }
-    
-    
+
+
 
 }
