@@ -1,429 +1,421 @@
 //body index
 .grid {
-    display: grid;
-    grid-template-columns: 0.65fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        "item1 item2"
-        "item1 item3";
-    gap: 2rem;
-    margin-top: 0px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 0.65fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "item1 item2"
+    "item1 item3";
+  gap: 2rem;
+  margin-top: 0px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 
+  .grid__item {
+    background-position: center center;
+  }
 
-    .grid__item {
-        background-position: center center;
+  .grid__item1 {
+    grid-area: item1;
+    background-color: $colorfound;
+    margin-top: 40px;
+    width: 60%;
+    padding-block: 30px;
+    margin-left: 180px;
+    border-top: 9px dotted #000;
+    border-right: 4px double $colorPrimaryBeta;
+    border-bottom: 4px double $colorPrimaryBeta;
+    border-left: 4px double $colorPrimaryBeta;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+    & h4 {
+      font-size: 3rem;
+      color: $colorSecundary;
+      text-shadow: $textshadow;
+      font-family: $fontKanit;
     }
 
-    .grid__item1 {
-        grid-area: item1;
-        background-color: $colorfound;
-        margin-top: 40px;
-        width: 60%;
-        padding-block: 30px;
-        margin-left: 180px;
-        border-top: 9px dotted #000;
-        border-right: 4px double $colorPrimaryBeta;
-        border-bottom: 4px double $colorPrimaryBeta;
-        border-left: 4px double $colorPrimaryBeta;
-        border-bottom-right-radius: 50px;
-        border-bottom-left-radius: 50px;
+    &:hover {
+      background: rgb(1, 5, 11);
+      background: radial-gradient(
+        circle,
+        rgb(208, 24, 24) 27%,
+        rgba(121, 9, 20, 0.584) 61%
+      );
+    }
+  }
 
-        & h4 {
-            font-size: 3rem;
-            color: $colorSecundary;
-            text-shadow: $textshadow;
-            font-family: $fontKanit;
+  .grid__item2 {
+    grid-area: item2;
+    border: 4px double $colorPrimaryBeta;
+    width: 80%;
+    padding-block: 10px;
+    margin-top: 5px;
+    margin-right: 20rem;
+    background-color: $colorfound;
 
-        }
-
-        &:hover {
-
-            background: rgb(1, 5, 11);
-            background: radial-gradient(circle, rgb(208, 24, 24) 27%, rgba(121, 9, 20, 0.584) 61%);
-
-        }
+    & h5 {
+      font-family: $fontRoboto;
+      letter-spacing: 5px;
+      font-weight: bold;
+      font-size: 3rem;
+      color: $colorSecundary;
+      text-shadow: $textshadow;
     }
 
-    .grid__item2 {
-        grid-area: item2;
-        border: 4px double $colorPrimaryBeta;
-        width: 80%;
-        padding-block: 10px;
-        margin-top: 5px;
-        margin-right: 20rem;
-        background-color: $colorfound;
+    &:hover {
+      background: rgb(1, 5, 11);
+      background: radial-gradient(
+        circle,
+        rgb(208, 24, 24) 27%,
+        rgba(121, 9, 20, 0.584) 61%
+      );
+    }
+  }
 
+  .grid__item3 {
+    grid-area: item3;
+    background-image: url(../assets/tanonoticias.jpg);
+    width: 400px;
+    height: 400px;
+    border-radius: 50px;
+    margin-left: 15rem;
+    margin-top: -30px;
+    position: relative;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.75);
+    border: 4px double rgb(255, 82, 82);
 
-        & h5 {
-            font-family: $fontRoboto;
-            letter-spacing: 5px;
-            font-weight: bold;
-            font-size: 3rem;
-            color: $colorSecundary;
-            text-shadow: $textshadow;
-        }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 
-        &:hover {
+  .scrolls {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 10rem;
+    left: 30rem;
 
-            background: rgb(1, 5, 11);
-            background: radial-gradient(circle, rgb(208, 24, 24) 27%, rgba(121, 9, 20, 0.584) 61%);
-
-        }
-
+    .scroll {
+      width: 15px;
+      height: 15px;
+      background-color: darkgrey;
+      border-radius: 50%;
     }
 
-    .grid__item3 {
-        grid-area: item3;
-        background-image: url(../assets/tanonoticias.jpg);
-        width: 400px;
-        height: 400px;
-        border-radius: 50px;
-        margin-left: 15rem;
-        margin-top: -30px;
-        position: relative;
-        box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.75);
-        border: 4px double rgb(255, 82, 82);
-
-        &:hover {
-            transform: scale(1.1)
-        }
-
+    .scroll-y {
+      background-color: $colorPrimaryBeta;
     }
-
-    .scrolls {
-        display: flex;
-        gap: 5px;
-        position: absolute;
-        bottom: 10rem;
-        left: 30rem;
-
-        .scroll {
-            width: 15px;
-            height: 15px;
-            background-color: darkgrey;
-            border-radius: 50%;
-        }
-
-        .scroll-y {
-            background-color: $colorPrimaryBeta;
-        }
-    }
-
+  }
 }
 
 .stars {
-    display: flex;
-    text-align: center;
-    margin-left: 5px;
-    margin-top: -30px;
-    margin-bottom: 50px;
+  display: flex;
+  text-align: center;
+  margin-left: 5px;
+  margin-top: -30px;
+  margin-bottom: 50px;
 
-    .borde_stars {
-        min-width: 100%;
-        height: 40vh;
-        border-top: 10px double $colorPrimary;
-        border-right: none;
-        border-bottom: 10px double$colorPrimary;
-        border-left: none;
-        filter: drop-shadow(0px 0px 5px rgb(197, 16, 16));
-        font-family: $fontKanit;
+  .borde_stars {
+    min-width: 100%;
+    height: 40vh;
+    border-top: 10px double $colorPrimary;
+    border-right: none;
+    border-bottom: 10px double$colorPrimary;
+    border-left: none;
+    filter: drop-shadow(0px 0px 5px rgb(197, 16, 16));
+    font-family: $fontKanit;
 
+    .estrella {
+      position: relative;
+      display: block;
+      width: 0px;
+      height: 0px;
+      margin: 50px 0;
+      color: #0464e2;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid $colorPrimary;
+      transform: rotate(35deg);
+      margin-left: 100px;
 
-        .estrella {
-            position: relative;
-            display: block;
-            width: 0px;
-            height: 0px;
-            margin: 50px 0;
-            color: #0464e2;
-            border-left: 100px solid transparent;
-            border-right: 100px solid transparent;
-            border-bottom: 70px solid $colorPrimary;
-            transform: rotate(35deg);
-            margin-left: 100px;
-    
+      &::before {
+        content: "";
+        position: absolute;
+        top: -45px;
+        left: -65px;
+        display: block;
+        height: 0;
+        width: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 80px solid $colorPrimary;
+        transform: rotate(-35deg);
+      }
 
+      &::after {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: -105px;
+        display: block;
+        width: 0px;
+        height: 0px;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 70px solid $colorPrimary;
+        transform: rotate(-70deg);
+      }
 
-            &::before {
-                content: '';
-                position: absolute;
-                top: -45px;
-                left: -65px;
-                display: block;
-                height: 0;
-                width: 0;
-                border-left: 30px solid transparent;
-                border-right: 30px solid transparent;
-                border-bottom: 80px solid $colorPrimary;
-                transform: rotate(-35deg);
-
-            }
-
-            &::after {
-                content: '';
-                position: absolute;
-                top: 3px;
-                left: -105px;
-                display: block;
-                width: 0px;
-                height: 0px;
-                border-left: 100px solid transparent;
-                border-right: 100px solid transparent;
-                border-bottom: 70px solid $colorPrimary;
-                transform: rotate(-70deg);
-
-            }
-
-            .nick {
-
-                transform: rotate(326deg);
-                top: 135px;
-                padding-left: 20px;
-                position: absolute;
-                color: $colorSecundary;
-                text-shadow: $textshadow;
-
-            }
-
-        }
+      .nick {
+        transform: rotate(326deg);
+        top: 135px;
+        padding-left: 20px;
+        position: absolute;
+        color: $colorSecundary;
+        text-shadow: $textshadow;
+      }
     }
-
-
+  }
 }
 
 .formulario {
-    width: 50%;
-    margin: auto;
-    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.75);
-    padding :15px;
-    border: 7px double $colorPrimary;
-    font-family: $fontRoboto;
-
+  width: 50%;
+  margin: auto;
+  box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.75);
+  padding: 15px;
+  border: 7px double $colorPrimary;
+  font-family: $fontRoboto;
 }
 
-
+footer{
+    height: 200px;
+  
+    background-image: radial-gradient( circle farthest-corner at 6.7% 22.9%,  rgba(53, 62, 75, 0.601) 0%, rgba(187, 187, 187, 0.601) 96.6% );
+}
 
 // HOJA TIENDA //
 .grid__tienda {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "tabla1"
-        "tabla2";
-    margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "tabla1"
+    "tabla2";
+  margin-top: 50px;
 
-
-    .grid__table {
-
-        & .table1 {
-            grid-area: tabla1;
-            width: 70%;
-            text-align: center;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        & .table2 {
-            grid-area: tabla2;
-            width: 70%;
-            margin-top: 50px;
-            margin-bottom: 20px;
-            text-align: center;
-            margin: 0 auto;
-            position: relative;
-        }
+  .grid__table {
+    & .table1 {
+      grid-area: tabla1;
+      width: 70%;
+      text-align: center;
+      margin: 0 auto;
+      position: relative;
     }
 
-    .tienda__table {
-        margin: 0 auto;
-        text-align: center;
-        margin-block: 50px;
-        padding-block: 60px;
-        padding-inline: 150px;
-        border: 11px double $colorSecundary;
+    & .table2 {
+      grid-area: tabla2;
+      width: 70%;
+      text-align: center;
+      margin: 0 auto;
+      position: relative;
+    }
 
-        .tienda__jamon-img {
-            width: 160px;
+    .borde__tienda {
+      display: flex;
+      text-align: center;
+      border: 8px double $colorPrimary;
+      width: 50%;
+      margin: 0 auto;
 
-        }
+      .legend{
+        font-size: 3rem;
+        padding-inline: 10px;
+        font-weight: bold;
+        color: $colorSecundary;
+        text-shadow: 4px 4px 2px rgb(140, 8, 8);
+      }
+    }
+  }
 
-        .tienda__th {
-            padding-inline: 50px;
-            font-family: $fontKanit;
-            font-size: 1.5rem;
-            color: $colorSecundary;
-            text-shadow: -1px 3px 2px rgba(0, 0, 0, 1);
+  .tienda__table {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
 
-        }
+    .tienda__jamon-img {
+      width: 160px;
+    }
 
-        .button__comprar {
-            display: flex;
-            margin-top: 50px;
-            font-family: $fontRoboto;
-            font-weight: bold;
-            font-size: 1.5rem;
-            color: $colorPrimary;
-            margin: 0 auto;
-            margin-top: 10px;
-            padding: 10px;
-            box-shadow: 2px 7px 8px 2px rgba(0, 0, 0, 1);
-            text-shadow: -1px 3px 2px rgba(0, 0, 0, 1);
+    .tienda__th {
+      font-family: $fontKanit;
+      font-size: 1.5rem;
+      color: $colorSecundary;
+      text-shadow: -1px 3px 2px rgba(0, 0, 0, 1);
+      padding-top: 20px;
+      padding-inline: 90px;
+    }
 
-        }
+    .button__comprar {
+      display: flex;
+      margin-top: 50px;
+      font-family: $fontRoboto;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: $colorSecundary;
+      margin: 0 auto;
+      margin-top: 20px;
+      padding: 10px;
+      box-shadow: 2px 7px 8px 2px rgba(0, 0, 0, 1);
+      text-shadow: -1px 3px 2px rgba(0, 0, 0, 1);
+      margin-bottom: 20px;
+      background-image: linear-gradient(to right, #F7971E 0%, #FFD200  51%, #F7971E  100%);
 
     }
 
+    .button__comprar:hover{
+        color: $colorSecundary;
+    
+        background-image: linear-gradient(to right, #870000 0%, #190A05  51%, #870000  100%)
+      }
+  }
 }
 
 // HOJA VISITANOS
 .grid__visitanos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        "caja1 caja1"
-        "caja2 caja3";
-    margin-block: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "caja1 caja1"
+    "caja2 caja3";
+  margin-block: 10px;
 
-    .grid__visita {
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        margin: 0 auto;
-        border: 10px ridge $colorPrimaryBeta;
-        background-color: rgba(0, 0, 0, 0.373);
+  .grid__visita {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 10px ridge $colorPrimaryBeta;
+    background-color: rgba(0, 0, 0, 0.373);
+  }
 
-    }
+  .grid__visita1 {
+    grid-area: caja1;
+    background-color: $colorPrimary;
+    height: 335px;
+    width: 580px;
+    margin-top: 110px;
+  }
 
-    .grid__visita1 {
-        grid-area: caja1;
-        background-color: $colorPrimary;
-        height: 335px;
-        width: 580px;
-        margin-top: 110px;
-    }
+  .grid__visita2 {
+    grid-area: caja2;
+    font-family: $fontUbuntu;
+    background-color: rgba(0, 0, 0, 0.39);
+    font-size: 1.2rem;
+    padding: 15px;
+    color: $colorSecundary;
+  }
 
-    .grid__visita2 {
-        grid-area: caja2;
-        font-family: $fontUbuntu;
-        background-color: rgba(0, 0, 0, 0.39);
-        font-size: 1.2rem;
-        padding: 15px;
-        color: $colorSecundary;
-    }
-
-    .grid__visita3 {
-        grid-area: caja3;
-        background-color: rgba(0, 0, 0, 0.39);
-        font-family: $fontUbuntu;
-        font-size: 1.2rem;
-        padding: 15px;
-        color: $colorSecundary;
-    }
-
+  .grid__visita3 {
+    grid-area: caja3;
+    background-color: rgba(0, 0, 0, 0.39);
+    font-family: $fontUbuntu;
+    font-size: 1.2rem;
+    padding: 15px;
+    color: $colorSecundary;
+  }
 }
 
 // HOJA PRODUCTO
 
 .aborder {
-    width: 80%;
+  width: 80%;
 
-    .grid__productos {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:
-            "producto1 producto2 producto3 producto4";
-        padding-bottom: 100px;
-        column-gap: 50px;
-        margin-top: 100px;
-        text-align: center;
+  .grid__productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "producto1 producto2 producto3 producto4";
+    padding-bottom: 100px;
+    column-gap: 50px;
+    margin-top: 100px;
+    text-align: center;
 
-        .grid__product1 {
-            grid-area: producto1;
-
-        }
-
-        .grid__product2 {
-            grid-area: producto2;
-        }
-
-        .grid__product3 {
-            grid-area: producto3;
-
-        }
-
-        .grid__product4 {
-            grid-area: producto4;
-        }
-
-        .product-img {
-            border-radius: 30px;
-        }
-
+    .grid__product1 {
+      grid-area: producto1;
     }
+
+    .grid__product2 {
+      grid-area: producto2;
+    }
+
+    .grid__product3 {
+      grid-area: producto3;
+    }
+
+    .grid__product4 {
+      grid-area: producto4;
+    }
+
+    .product-img {
+      border-radius: 30px;
+    }
+  }
 }
 
 .footer__producto {
-    background-color: $colorPrimary;
-    display: flex;
-    align-items: center;
-    gap: 120px;
-    padding-left: 40px;
-    margin-block: 70px;
+  background-color: $colorPrimary;
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  padding-left: 40px;
+  margin-block: 70px;
 
-    .product-img:hover {
-        transform: scale(1.1)
-    }
+  .product-img:hover {
+    transform: scale(1.1);
+  }
 
-    .text-qr {
-        font-size: 3rem;
-        font-family: $fontKanit;
-        text-shadow: -3px 3px 8px rgba(0, 0, 0, 1);
-        color: #800707;
-        letter-spacing: 2px;
-    }
-
-
+  .text-qr {
+    font-size: 3rem;
+    font-family: $fontKanit;
+    text-shadow: -3px 3px 8px rgba(0, 0, 0, 1);
+    color: #800707;
+    letter-spacing: 2px;
+  }
 }
 
 // HOJA CONTACTO
 .section__contacto {
-    display: flex;
-    padding-block: 50px;
+  display: flex;
+  padding-block: 50px;
 
-    .contacto__div {
-        margin: 0 auto;
-        padding: 90px;
-        width: 500px;
-        color: $colorSecundary;
-        border: 8px ridge $colorSecundary;
-        background-color: #0c0e0d7c;
-        text-align: center;
+  .contacto__div {
+    margin: 0 auto;
+    padding: 90px;
+    width: 500px;
+    color: $colorSecundary;
+    border: 8px ridge $colorSecundary;
+    background-color: #0c0e0d7c;
+    text-align: center;
 
-        .title_contacto-div {
-            font-family: $fontKanit;
-            font-size: 4rem;
-            color: $colorPrimary;
-            text-shadow: 1px 4px 5px rgba(0, 0, 0, 1);
-
-        }
-
-        .contacto__area {
-            margin-block: 40px;
-            font-size: 1rem;
-        }
-
-        .contacto__box {
-            font-size: 1.5rem;
-            margin-block: 20px;
-
-
-        }
-
+    .title_contacto-div {
+      font-family: $fontKanit;
+      font-size: 4rem;
+      color: $colorPrimary;
+      text-shadow: 1px 4px 5px rgba(0, 0, 0, 1);
     }
 
+    .contacto__area {
+      margin-block: 40px;
+      font-size: 1rem;
+    }
+
+    .contacto__box {
+      font-size: 1.5rem;
+      margin-block: 20px;
+    }
+  }
 }

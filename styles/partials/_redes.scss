@@ -1,4 +1,4 @@
-fieldset {
+.fieldset__redes{
     display: flex;
     text-align: center;
     border: 8px double $colorSecundary;
@@ -6,7 +6,7 @@ fieldset {
     margin: 0 auto;
     margin-top: 100px;
     padding-block: 10px;
-    margin-bottom: 40px;
+
 
     .legend {
         font-size: 2rem;
@@ -27,7 +27,5 @@ fieldset {
         }
 
     }
-
-
 
 }

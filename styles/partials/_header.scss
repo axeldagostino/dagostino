@@ -1,78 +1,70 @@
 header {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+
+  .title {
     margin: 0 auto;
-    align-items: center;
-    justify-items: center;
+    padding-block: 80px;
 
+    & .logo {
+      width: 28%;
+      animation-name: rotacion_logo;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 3s;
+      animation-delay: 1s;
 
-    .title {
-        margin: 0 auto;
-        padding-block: 80px;
-
-
-        & .logo {
-            width: 28%;
-            animation-name: rotacion_logo;
-            animation-iteration-count: 1;
-            animation-timing-function: ease-in;
-            animation-duration: 3s;
-            animation-delay: 1s;
-
-            @keyframes rotacion_logo {
-                0% {
-                    transform: rotateX(0)
-                }
-
-                100% {
-                    transform: rotateX(-360deg)
-                }
-            }
-        }
-    }
-
-    .navbar {
-        background-color: $colorfound;
-        border: 2px double $colorPrimaryBeta;
-        border-right: none;
-        border-left: none;
-        position: sticky;
-        top: 0;
-
-        .navbar-nav a {
-            color: $colorPrimaryBeta;
-            font-size: 2rem;
-            font-family: $fontUbuntu;
-            font-weight: bold;
-            letter-spacing: 3px;
-            text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
-
+      @keyframes rotacion_logo {
+        0% {
+          transform: rotateX(0);
         }
 
+        100% {
+          transform: rotateX(-360deg);
+        }
+      }
     }
+  }
 
-    .navbar-nav :hover {
-        color: $colorSecundary;
-        text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
-        transform: scale(1.1) translatey(-5px);
+  .navbar {
+    background-color: $colorfound;
+    border: 2px double $colorPrimaryBeta;
+    border-right: none;
+    border-left: none;
 
+    .navbar-nav a {
+      color: $colorPrimaryBeta;
+      font-size: 2rem;
+      font-family: $fontUbuntu;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
     }
+  }
 
-    //titulo de hojas.
+  .navbar-nav :hover {
+    color: $colorSecundary;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
+    transform: scale(1.1) translatey(-5px);
+  }
 
+  //titulo de hojas.
 
-    .title__hojas {
-        width: 60%;
-        font-family: $fontRoboto;
-        font-size: 8rem;
-        font-weight: bold;
-        letter-spacing: 20px;
-        color: $colorPrimaryBeta;
-        text-shadow: -3px 3px 8px rgb(195, 195, 195);
-        margin: 0 auto;
-        margin-block: 50px;
-        box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
-
-
-    }
+  .title__hojas {
+    width: 60%;
+    font-family: $fontRoboto;
+    font-size: 8rem;
+    font-weight: bold;
+    letter-spacing: 20px;
+    color: $colorPrimaryBeta;
+    text-shadow: -3px 3px 8px rgb(195, 195, 195);
+    margin: 0 auto;
+    margin-block: 50px;
+    box-shadow: rgba(227, 12, 12, 0.4) 0px 5px,
+      rgba(220, 7, 46, 0.3) 0px 10px, rgba(186, 11, 14, 0.2) 0px 15px,
+      rgba(218, 12, 12, 0.1) 0px 20px, rgba(236, 228, 5, 0.05) 0px 25px;
+  }
 }

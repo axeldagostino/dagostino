@@ -56,9 +56,6 @@ header .navbar {
   border: 2px double #FFD700;
   border-right: none;
   border-left: none;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 }
 header .navbar .navbar-nav a {
   color: #FFD700;
@@ -83,7 +80,7 @@ header .title__hojas {
   text-shadow: -3px 3px 8px rgb(195, 195, 195);
   margin: 0 auto;
   margin-block: 50px;
-  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+  box-shadow: rgba(227, 12, 12, 0.4) 0px 5px, rgba(220, 7, 46, 0.3) 0px 10px, rgba(186, 11, 14, 0.2) 0px 15px, rgba(218, 12, 12, 0.1) 0px 20px, rgba(236, 228, 5, 0.05) 0px 25px;
 }
 
 .grid {
@@ -251,12 +248,17 @@ header .title__hojas {
   font-family: "Reboto", cursive;
 }
 
+footer {
+  height: 200px;
+  background-image: radial-gradient(circle farthest-corner at 6.7% 22.9%, rgba(53, 62, 75, 0.601) 0%, rgba(187, 187, 187, 0.601) 96.6%);
+}
+
 .grid__tienda {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "tabla1" "tabla2";
-  margin-top: 10px;
+  margin-top: 50px;
 }
 .grid__tienda .grid__table .table1 {
   grid-area: tabla1;
@@ -268,29 +270,39 @@ header .title__hojas {
 .grid__tienda .grid__table .table2 {
   grid-area: tabla2;
   width: 70%;
-  margin-top: 50px;
-  margin-bottom: 20px;
   text-align: center;
   margin: 0 auto;
   position: relative;
 }
+.grid__tienda .grid__table .borde__tienda {
+  display: flex;
+  text-align: center;
+  border: 8px double #EBB600;
+  width: 50%;
+  margin: 0 auto;
+}
+.grid__tienda .grid__table .borde__tienda .legend {
+  font-size: 3rem;
+  padding-inline: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 4px 4px 2px rgb(140, 8, 8);
+}
 .grid__tienda .tienda__table {
   margin: 0 auto;
   text-align: center;
-  margin-block: 50px;
-  padding-block: 60px;
-  padding-inline: 150px;
-  border: 11px double #ffffff;
+  margin-bottom: 20px;
 }
 .grid__tienda .tienda__table .tienda__jamon-img {
   width: 160px;
 }
 .grid__tienda .tienda__table .tienda__th {
-  padding-inline: 50px;
   font-family: "Kanit";
   font-size: 1.5rem;
   color: #ffffff;
   text-shadow: -1px 3px 2px rgb(0, 0, 0);
+  padding-top: 20px;
+  padding-inline: 90px;
 }
 .grid__tienda .tienda__table .button__comprar {
   display: flex;
@@ -298,12 +310,18 @@ header .title__hojas {
   font-family: "Reboto", cursive;
   font-weight: bold;
   font-size: 1.5rem;
-  color: #EBB600;
+  color: #ffffff;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 10px;
   box-shadow: 2px 7px 8px 2px rgb(0, 0, 0);
   text-shadow: -1px 3px 2px rgb(0, 0, 0);
+  margin-bottom: 20px;
+  background-image: linear-gradient(to right, #F7971E 0%, #FFD200 51%, #F7971E 100%);
+}
+.grid__tienda .tienda__table .button__comprar:hover {
+  color: #ffffff;
+  background-image: linear-gradient(to right, #870000 0%, #190A05 51%, #870000 100%);
 }
 
 .grid__visitanos {
@@ -421,7 +439,7 @@ header .title__hojas {
   margin-block: 20px;
 }
 
-fieldset {
+.fieldset__redes {
   display: flex;
   text-align: center;
   border: 8px double #ffffff;
@@ -429,22 +447,21 @@ fieldset {
   margin: 0 auto;
   margin-top: 100px;
   padding-block: 10px;
-  margin-bottom: 40px;
 }
-fieldset .legend {
+.fieldset__redes .legend {
   font-size: 2rem;
   padding-inline: 10px;
   font-weight: bold;
   color: #FFD700;
   text-shadow: 4px 4px 2px rgb(0, 0, 0);
 }
-fieldset .redes {
+.fieldset__redes .redes {
   display: flex;
   gap: 160px;
   margin: 0 auto;
   padding-bottom: 25px;
 }
-fieldset .redes .redes-img {
+.fieldset__redes .redes .redes-img {
   height: 70px;
 }
 

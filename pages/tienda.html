@@ -2,171 +2,185 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tano miguel - Tienda</title>
-    <meta name="description" content="La mejor tienda de productos">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tano miguel - Tienda</title>
+  <meta name="description" content="La mejor tienda de productos" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="../styles/estilo.css">
+  <link rel="stylesheet" href="../styles/estilo.css" />
 </head>
 
 <body>
+  <section class="section__header">
+    <header>
+      <h1 class="title__hojas">TIENDA</h1>
 
-    <section class="section__header">
-
-        <header>
-
-            <h1 class="title__hojas">TIENDA</h1>
-
-            <div class="header__menu">
-
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid ">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav mx-auto gap-5 ">
-                                <a class="nav-link " href="../index.html">Home </a>
-                                <a class="nav-link  active text-light fw-bold" href="tienda.html">Tienda</a>
-                                <a class="nav-link" href="visitanos.html">Visitanos</a>
-                                <a class="nav-link" href="productos.html">Productos</a>
-                                <a class="nav-link" href="contacto.html">Contacto</a>
-
-                            </div>
-                        </div>
-                    </div>
-                </nav>
+      <div class="header__menu">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav mx-auto gap-5">
+                <a class="nav-link" href="../index.html">Home </a>
+                <a class="nav-link active text-light fw-bold" href="tienda.html">Tienda</a>
+                <a class="nav-link" href="visitanos.html">Visitanos</a>
+                <a class="nav-link" href="productos.html">Productos</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </div>
             </div>
-        </header>
-    </section>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </section>
 
-    <!-- ***GRIDS*** -->
-    <section class="grid__tienda">
+  <!-- ***GRIDS*** -->
+  <section class="grid__tienda">
+    <div class="grid__table table1">
+      <fieldset class="borde__tienda">
+        <legend class="legend float-none w-auto p-2">Jamon</legend>
 
-        <div class="grid__table table1">
+        <table class="tienda__table">
+          <thead>
+            <tr>
+              <th class="tienda__th">Jamon - 42 Los Calvos</th>
+              <th class="tienda__th">Jamon - Paladini</th>
+            </tr>
+          </thead>
 
-            <table class="tienda__table">
+          <tfoot>
+            <tr>
+              <td class="tienda__th">
+                <select name="los calvos" id="los calvos">
+                  <option>Cantidad</option>
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+                <button class="button__comprar">COMPRAR</button>
+              </td>
 
-                <thead>
-                    <tr>
-                        <th class="tienda__th ">Jamon - 42 Los Calvos</th>
-                        <th class="tienda__th">Jamon - Paladini</th>
-                    </tr>
-                </thead>
+              <td class="tienda__th">
+                <select name="jamon paladini" id="jamon paladini">
+                  <option>Cantidad</option>
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+                <button class="button__comprar">COMPRAR</button>
+              </td>
+            </tr>
+          </tfoot>
 
-                <tfoot>
-                    <tr>
-                        <td class="tienda__th">
-                            <select name="los calvos" id="los calvos">
-                                <option> Cantidad </option>
-                                <option>0</option>
-                                <option>1</option>
-                                <option>2</option>
+          <tbody>
+            <tr>
+              <td class="tienda__th">
+                <label for="los calvos">
+                  <img class="tienda__jamon-img"
+                    src="https://distribuidorasegurola.com.ar/wp-content/uploads/2022/05/pernil-los-calvos-42.png"
+                    alt="" /></label>
+              </td>
+              <td class="tienda__th">
+                <label for="jamon paladini"><img class="tienda__jamon-img"
+                    src="https://www.paladini.com.ar/assets/img/productos/productos/jamon-cocido.png"
+                    alt="jamon paladini" /></label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+    </div>
 
-                            </select>
-                            <button class="button__comprar">COMPRAR</button>
-                        </td>
+    <div class="grid__table table2">
+      <fieldset class="borde__tienda">
+        <legend class="legend float-none w-auto p-2">Quesos</legend>
+        <table class="tienda__table">
+          <thead>
+            <tr>
+              <th class="tienda__th">Queso - Veronica</th>
+              <th class="tienda__th">Queso - Punta de agua</th>
+            </tr>
+          </thead>
 
-                        <td class="tienda__th">
-                            <select name="jamon paladini" id="jamon paladini">
-                                <option> Cantidad </option>
-                                <option>0</option>
-                                <option>1</option>
-                                <option>2</option>
+          <tfoot>
+            <tr>
+              <td class="tienda__th">
+                <select name="veronica" id="veronica">
+                  <option>Cantidad</option>
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+                <button class="button__comprar">COMPRAR</button>
+              </td>
 
-                            </select>
-                            <button class="button__comprar">COMPRAR</button>
-                        </td>
-                    </tr>
+              <td class="tienda__th">
+                <select name="puntadeagua" id="puntadeagua">
+                  <option>Cantidad</option>
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+                <button class="button__comprar">COMPRAR</button>
+              </td>
+            </tr>
+          </tfoot>
 
-                </tfoot>
+          <tbody>
+            <tr>
+              <td class="tienda__th">
+                <label for="veronica">
+                  <img class="tienda__jamon-img"
+                    src="http://veronica.com.ar/contenidos/productos/441/img/mid/Chica-BARRATybo.png"
+                    alt="veronica" /></label>
+              </td>
+              <td class="tienda__th">
+                <label for="puntadeagua"><img class="tienda__jamon-img"
+                    src="https://supermercadoseven.com.ar/wp-content/uploads/2022/07/2000870000009_127-6.png"
+                    alt="punta de agua" /></label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+    </div>
+  </section>
 
-                <tbody>
-                    <td class="tienda__th">
-                        <label for="los calvos"> <img class="tienda__jamon-img"
-                                src="https://distribuidorasegurola.com.ar/wp-content/uploads/2022/05/pernil-los-calvos-42.png"
-                                alt=""></label>
-                    </td>
-                    <td class="tienda__th">
-                        <label for="jamon paladini"><img class="tienda__jamon-img"
-                                src="https://www.paladini.com.ar/assets/img/productos/productos/jamon-cocido.png"
-                                alt="jamon paladini"></label>
+  <section>
+    <footer>
+      <fieldset class="fieldset__redes border p-2">
+        <legend class="legend float-none w-auto p-2">Redes Sociales</legend>
 
-                    </td>
+        <div class="redes">
+          <div class="facebook">
+            <a href="https://es-la.facebook.com/eltanomiguel2216/">
+              <img class="redes-img" src="https://cdn-icons-png.flaticon.com/512/1384/1384879.png" alt="facebook" /></a>
+          </div>
 
-                    </tr>
-                </tbody>
+          <div class="instagram">
+            <a href="https://www.instagram.com/eltanomiguel/?hl=es">
+              <img class="redes-img" src="https://cdn-icons-png.flaticon.com/512/1384/1384886.png" alt="instagram" />
+            </a>
+          </div>
 
-            </table>
-
+          <div class="whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=541161333650">
+              <img class="redes-img" src="https://cdn-icons-png.flaticon.com/512/1384/1384883.png" alt="whatsapp" />
+            </a>
+          </div>
         </div>
-
-
-        <div class="grid__table table2">
-
-            <table class="tienda__table">
-
-                <thead>
-                    <tr>
-                        <th class="tienda__th">Queso - Veronica</th>
-                        <th class="tienda__th">Queso - Punta de agua</th>
-                    </tr>
-                </thead>
-
-                <tfoot>
-                    <tr>
-                        <td class="tienda__th">
-                            <select name="veronica" id="veronica">
-                                <option> Cantidad </option>
-                                <option>0</option>
-                                <option>1</option>
-                                <option>2</option>
-
-                            </select>
-                            <button class="button__comprar">COMPRAR</button>
-                        </td>
-
-                        <td class="tienda__th">
-                            <select name="puntadeagua" id="puntadeagua">
-                                <option> Cantidad </option>
-                                <option>0</option>
-                                <option>1</option>
-                                <option>2</option>
-
-                            </select>
-                            <button class="button__comprar">COMPRAR</button>
-                        </td>
-                    </tr>
-                </tfoot>
-
-                <tbody>
-                    <tr>
-                        <td class="tienda__th">
-                            <label for="veronica"> <img class="tienda__jamon-img"
-                                    src="http://veronica.com.ar/contenidos/productos/441/img/mid/Chica-BARRATybo.png"
-                                    alt="veronica" /></label>
-                        </td>
-                        <td class="tienda__th">
-                            <label for="puntadeagua"><img class="tienda__jamon-img"
-                                    src="https://supermercadoseven.com.ar/wp-content/uploads/2022/07/2000870000009_127-6.png"
-                                    alt="punta de agua" /></label>
-                        </td>
-                    </tr>
-                </tbody>
-
-            </table>
-
-        </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
+      </fieldset>
+    </footer>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
