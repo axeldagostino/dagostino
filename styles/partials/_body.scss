@@ -191,10 +191,14 @@
   font-family: $fontRoboto;
 }
 
-footer{
-    height: 200px;
-  
-    background-image: radial-gradient( circle farthest-corner at 6.7% 22.9%,  rgba(53, 62, 75, 0.601) 0%, rgba(187, 187, 187, 0.601) 96.6% );
+footer {
+  height: 200px;
+
+  background-image: radial-gradient(
+    circle farthest-corner at 6.7% 22.9%,
+    rgba(53, 62, 75, 0.601) 0%,
+    rgba(187, 187, 187, 0.601) 96.6%
+  );
 }
 
 // HOJA TIENDA //
@@ -231,7 +235,7 @@ footer{
       width: 50%;
       margin: 0 auto;
 
-      .legend{
+      .legend {
         font-size: 3rem;
         padding-inline: 10px;
         font-weight: bold;
@@ -272,15 +276,24 @@ footer{
       box-shadow: 2px 7px 8px 2px rgba(0, 0, 0, 1);
       text-shadow: -1px 3px 2px rgba(0, 0, 0, 1);
       margin-bottom: 20px;
-      background-image: linear-gradient(to right, #F7971E 0%, #FFD200  51%, #F7971E  100%);
-
+      background-image: linear-gradient(
+        to right,
+        #f7971e 0%,
+        #ffd200 51%,
+        #f7971e 100%
+      );
     }
 
-    .button__comprar:hover{
-        color: $colorSecundary;
-    
-        background-image: linear-gradient(to right, #870000 0%, #190A05  51%, #870000  100%)
-      }
+    .button__comprar:hover {
+      color: $colorSecundary;
+
+      background-image: linear-gradient(
+        to right,
+        #870000 0%,
+        #190a05 51%,
+        #870000 100%
+      );
+    }
   }
 }
 
@@ -331,38 +344,42 @@ footer{
 }
 
 // HOJA PRODUCTO
+.contenedor__mercaderia{
+  margin-block: 50px;
 
-.aborder {
-  width: 80%;
+.grid__productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+padding-bottom: 50px;
+  gap: 100px;
 
-  .grid__productos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "producto1 producto2 producto3 producto4";
-    padding-bottom: 100px;
-    column-gap: 50px;
-    margin-top: 100px;
-    text-align: center;
+  .mercaderia-img {
+    width: 300px;
+    border-radius: 50px;
+    ;
 
-    .grid__product1 {
-      grid-area: producto1;
+    &:hover {
+      transform: scale(1.1);
     }
+  }
+}
+}
 
-    .grid__product2 {
-      grid-area: producto2;
-    }
+.borde__tienda {
+  display: flex;
+  text-align: center;
+  border: 8px double $colorPrimary;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 50px;
 
-    .grid__product3 {
-      grid-area: producto3;
-    }
-
-    .grid__product4 {
-      grid-area: producto4;
-    }
-
-    .product-img {
-      border-radius: 30px;
-    }
+  .legend {
+    font-size: 3rem;
+    padding-inline: 10px;
+    font-weight: bold;
+    color: $colorSecundary;
+    text-shadow: 4px 4px 2px rgb(140, 8, 8);
   }
 }
 
@@ -373,10 +390,6 @@ footer{
   gap: 120px;
   padding-left: 40px;
   margin-block: 70px;
-
-  .product-img:hover {
-    transform: scale(1.1);
-  }
 
   .text-qr {
     font-size: 3rem;

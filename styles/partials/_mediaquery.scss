@@ -2,167 +2,193 @@
 
 // INDEX
 @media screen and (max-width: 480px) {
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-image: url(https://w0.peakpx.com/wallpaper/220/854/HD-wallpaper-whatsapp-black-abstract-abstract-digital-abstraction-abstracts-background-digital-pattern-texture.jpg);
+
+    & .title__hojas {
+      letter-spacing: 1px;
+      font-size: 4.5rem;
+      width: auto;
+      margin-top: 20px;
+    }
 
     .title .logo {
-        width: 80%;
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
 
+  .grid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+
+    .grid__item1 {
+      width: 90%;
+      padding-block: 30px;
+      margin: auto;
+      margin-top: 90px;
+      font-size: 2rem;
+
+      & h4 {
+        font-size: 2rem;
+      }
     }
 
-    .grid {
-        margin-left: 10px;
+    .grid__item2 {
+      width: 80%;
+      padding-block: 10px;
+      margin-top: 5px;
+      margin: auto;
 
-        & .grid__item1 {
-            font-size: 1.6rem;
-            margin-block: 10px;
-        }
-
-        & .grid__item2 {
-            letter-spacing: 3px;
-            font-size: 2rem;
-            width: 100%;
-        }
-
-        & .grid__item3 {
-            margin-left: 0;
-        }
-
-        .scrolls {
-            position: absolute;
-            bottom: -5rem;
-            left: 11rem;
-        }
-    
+      & h5 {
+        font-size: 2rem;
+      }
     }
 
-
-
-    // REDES //
-    fieldset {
-        width: 100%;
-        margin-top: 100px;
-        padding-block: 10px;
-        margin-bottom: 40px;
-    
-        .legend {
-            font-size: 2rem;
-            padding-inline: 0px;
-        }
-    
-        .redes {
-            gap: 50px;
-            padding-bottom: 10px;
-    
-            .redes-img {
-                height: 70px;
-            }
-        }
-        
-        
-    
+    .grid__item3 {
+      width: 400px;
+      height: 400px;
+      margin: auto;
     }
 
-    //TIENDA MEDIAQUERY
-    /* **********TIENDA MEDIA********** */
+    .scrolls {
+      display: none;
+    }
+  }
 
-    header .title__hojas {
-        letter-spacing: 3px;
-        font-size: 4rem;
-        width: auto;
-        // padding-left: 20px;
+  .stars {
+    display: none;
+  }
 
+  .formulario {
+    width: 80%;
+    margin-top: 50px;
+  }
+
+  // REDES //
+  .fieldset__redes {
+    width: 100%;
+    margin-top: 100px;
+    padding-block: 10px;
+    margin-bottom: 40px;
+
+    .legend {
+      font-size: 2rem;
+      padding-inline: 0px;
     }
 
+    .redes {
+      gap: 50px;
+      padding-bottom: 10px;
+
+      .redes-img {
+        height: 70px;
+      }
+    }
+  }
+
+  //TIENDA MEDIAQUERY
+  /* **********TIENDA MEDIA********** */
+  .grid__tienda {
+    
     .grid__table {
-        width: 480px;
-        margin: 0;
+      .borde__tienda {
+        width: 100%;
 
-        .tienda__table {
-            margin-block: 10px;
-            padding-block: 15px;
-            padding-inline: 0;
-
-            .tienda__th {
-                font-size: 1rem;
-                padding-inline: 20px;
-            }
-
-            .button__comprar {
-                font-size: 1rem;
-            }
+        .legend {
+          font-size: 2,1rem;
+          padding-inline: 10px;
         }
-
-
+      }
     }
+    .tienda__table {
+      margin-bottom: 0px;
+      
+      .tienda__jamon-img {
+        width: 130px;
+      }
 
-    /* **********VISITANOS MEDIA********** */
+      .tienda__th {
+        font-size: 1,2rem;
+        padding-top: 0px;
+        padding-inline: 50px;
+      }
 
-    .grid__visitanos {
-        display: flex;
-        flex-direction: column;
-        row-gap: 40px;
-
-        .grid__visita1 {
-            width: 90%;
-            margin-top: 10px;
-
-            .video {
-
-                width: 100%;
-            }
-        }
-
+      .button__comprar {
+        font-size: 1rem;
+        margin-top: 20px;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
     }
+  }
 
-    /* **********PRODUCTOS MEDIA********** */
-    .aborder {
-     width: 100%;
-     margin-top: 10px;
-        .grid__productos {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-template-areas:
-                "producto1 producto2"
-                "producto3 producto4";
-            padding-bottom: 15px;
-            column-gap: 70px;
-            row-gap: 90px;
-            margin-top: 20px;
-            text-align: center;
+  /* **********VISITANOS MEDIA********** */
 
+  .grid__visitanos {
+    display: flex;
+    flex-direction: column;
+    row-gap: 90px;
+    margin-top: 80px;
 
-            .product-img {
-                width: 190px;
-            }
+    .grid__visita1 {
+      width: 95%;
+      margin-top: 10px;
 
-        }
+      .video {
+        width: 100%;
+      }
     }
+  }
 
-    .footer__producto {
-        gap: 10px;
-        padding-left: 10px;
-        margin-block: 50px;
+  /* **********PRODUCTOS MEDIA********** */
+.contenedor__mercaderia{
+  margin-block: 50px;
+  margin-bottom: 100px;
+  
 
-        .text-qr {
-            font-size: 2rem;
-            font-family: 'kanit';
-            text-shadow: -3px 3px 8px rgba(0, 0, 0, 1);
-            color: #800707;
-            letter-spacing: 1px;
-        }
-    }
+.grid__productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "producto1 producto2"
+    "producto3 producto4";
+  padding-bottom: 15px;
+  column-gap: 30px;
+  row-gap: 50px;
+  margin-top: 20px;
+  text-align: center;
 
-    .section__contacto{
-        text-align: center;
-        justify-items: center;
-        align-items: center;
-   
-    
-    .contacto__div{
-        width: 90%;
-        padding: 0;
-    }
+  .mercaderia-img {
+    width: 200px;
+    border: 4px double rgb(255, 82, 82);
+  }
 }
-    
-    
+}
+.borde__tienda {
+  width: 100%;
+}
+
+  .footer__producto {
+    gap: 10px;
+    padding-left: 10px;
+    margin-block: 50px;
+
+    .text-qr {
+      font-size: 2rem;
+      font-family: "kanit";
+      text-shadow: -3px 3px 8px rgba(0, 0, 0, 1);
+      color: #800707;
+      letter-spacing: 1px;
+    }
+  }
 }

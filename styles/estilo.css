@@ -20,9 +20,10 @@ header {
 }
 header .title {
   margin: 0 auto;
-  padding-block: 80px;
+  padding-block: 20px;
 }
 header .title .logo {
+  padding-block: 30px;
   width: 28%;
   -webkit-animation-name: rotacion_logo;
           animation-name: rotacion_logo;
@@ -317,11 +318,11 @@ footer {
   box-shadow: 2px 7px 8px 2px rgb(0, 0, 0);
   text-shadow: -1px 3px 2px rgb(0, 0, 0);
   margin-bottom: 20px;
-  background-image: linear-gradient(to right, #F7971E 0%, #FFD200 51%, #F7971E 100%);
+  background-image: linear-gradient(to right, #f7971e 0%, #ffd200 51%, #f7971e 100%);
 }
 .grid__tienda .tienda__table .button__comprar:hover {
   color: #ffffff;
-  background-image: linear-gradient(to right, #870000 0%, #190A05 51%, #870000 100%);
+  background-image: linear-gradient(to right, #870000 0%, #190a05 51%, #870000 100%);
 }
 
 .grid__visitanos {
@@ -363,33 +364,38 @@ footer {
   color: #ffffff;
 }
 
-.aborder {
-  width: 80%;
+.contenedor__mercaderia {
+  margin-block: 50px;
 }
-.aborder .grid__productos {
+.contenedor__mercaderia .grid__productos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "producto1 producto2 producto3 producto4";
-  padding-bottom: 100px;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
-  margin-top: 100px;
+  margin: auto;
+  padding-bottom: 50px;
+  gap: 100px;
+}
+.contenedor__mercaderia .grid__productos .mercaderia-img {
+  width: 300px;
+  border-radius: 50px;
+}
+.contenedor__mercaderia .grid__productos .mercaderia-img:hover {
+  transform: scale(1.1);
+}
+
+.borde__tienda {
+  display: flex;
   text-align: center;
+  border: 8px double #EBB600;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
-.aborder .grid__productos .grid__product1 {
-  grid-area: producto1;
-}
-.aborder .grid__productos .grid__product2 {
-  grid-area: producto2;
-}
-.aborder .grid__productos .grid__product3 {
-  grid-area: producto3;
-}
-.aborder .grid__productos .grid__product4 {
-  grid-area: producto4;
-}
-.aborder .grid__productos .product-img {
-  border-radius: 30px;
+.borde__tienda .legend {
+  font-size: 3rem;
+  padding-inline: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 4px 4px 2px rgb(140, 8, 8);
 }
 
 .footer__producto {
@@ -399,9 +405,6 @@ footer {
   gap: 120px;
   padding-left: 40px;
   margin-block: 70px;
-}
-.footer__producto .product-img:hover {
-  transform: scale(1.1);
 }
 .footer__producto .text-qr {
   font-size: 3rem;
@@ -467,100 +470,145 @@ footer {
 
 /* ******MEDIA QUERIES************ */
 @media screen and (max-width: 480px) {
-  .title .logo {
-    width: 80%;
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-image: url(https://w0.peakpx.com/wallpaper/220/854/HD-wallpaper-whatsapp-black-abstract-abstract-digital-abstraction-abstracts-background-digital-pattern-texture.jpg);
+  }
+  header .title__hojas {
+    letter-spacing: 1px;
+    font-size: 4.5rem;
+    width: auto;
+    margin-top: 20px;
+  }
+  header .title .logo {
+    width: 90%;
+    margin: 0 auto;
   }
   .grid {
-    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
   }
   .grid .grid__item1 {
-    font-size: 1.6rem;
-    margin-block: 10px;
+    width: 90%;
+    padding-block: 30px;
+    margin: auto;
+    margin-top: 90px;
+    font-size: 2rem;
+  }
+  .grid .grid__item1 h4 {
+    font-size: 2rem;
   }
   .grid .grid__item2 {
-    letter-spacing: 3px;
+    width: 80%;
+    padding-block: 10px;
+    margin-top: 5px;
+    margin: auto;
+  }
+  .grid .grid__item2 h5 {
     font-size: 2rem;
-    width: 100%;
   }
   .grid .grid__item3 {
-    margin-left: 0;
+    width: 400px;
+    height: 400px;
+    margin: auto;
   }
   .grid .scrolls {
-    position: absolute;
-    bottom: -5rem;
-    left: 11rem;
+    display: none;
   }
-  fieldset {
+  .stars {
+    display: none;
+  }
+  .formulario {
+    width: 80%;
+    margin-top: 50px;
+  }
+  .fieldset__redes {
     width: 100%;
     margin-top: 100px;
     padding-block: 10px;
     margin-bottom: 40px;
   }
-  fieldset .legend {
+  .fieldset__redes .legend {
     font-size: 2rem;
     padding-inline: 0px;
   }
-  fieldset .redes {
+  .fieldset__redes .redes {
     gap: 50px;
     padding-bottom: 10px;
   }
-  fieldset .redes .redes-img {
+  .fieldset__redes .redes .redes-img {
     height: 70px;
   }
   /* **********TIENDA MEDIA********** */
-  header .title__hojas {
-    letter-spacing: 3px;
-    font-size: 4rem;
-    width: auto;
+  .grid__tienda .grid__table .borde__tienda {
+    width: 100%;
   }
-  .grid__table {
-    width: 480px;
-    margin: 0;
+  .grid__tienda .grid__table .borde__tienda .legend {
+    font-size: 2, 1rem;
+    padding-inline: 10px;
   }
-  .grid__table .tienda__table {
-    margin-block: 10px;
-    padding-block: 15px;
-    padding-inline: 0;
+  .grid__tienda .tienda__table {
+    margin-bottom: 0px;
   }
-  .grid__table .tienda__table .tienda__th {
+  .grid__tienda .tienda__table .tienda__jamon-img {
+    width: 130px;
+  }
+  .grid__tienda .tienda__table .tienda__th {
+    font-size: 1, 2rem;
+    padding-top: 0px;
+    padding-inline: 50px;
+  }
+  .grid__tienda .tienda__table .button__comprar {
     font-size: 1rem;
-    padding-inline: 20px;
-  }
-  .grid__table .tienda__table .button__comprar {
-    font-size: 1rem;
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
   }
   /* **********VISITANOS MEDIA********** */
   .grid__visitanos {
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
+    row-gap: 90px;
+    margin-top: 80px;
   }
   .grid__visitanos .grid__visita1 {
-    width: 90%;
+    width: 95%;
     margin-top: 10px;
   }
   .grid__visitanos .grid__visita1 .video {
     width: 100%;
   }
   /* **********PRODUCTOS MEDIA********** */
-  .aborder {
-    width: 100%;
-    margin-top: 10px;
+  .contenedor__mercaderia {
+    margin-block: 50px;
+    margin-bottom: 100px;
   }
-  .aborder .grid__productos {
+  .contenedor__mercaderia .grid__productos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "producto1 producto2" "producto3 producto4";
     padding-bottom: 15px;
-    -moz-column-gap: 70px;
-         column-gap: 70px;
-    row-gap: 90px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    row-gap: 50px;
     margin-top: 20px;
     text-align: center;
   }
-  .aborder .grid__productos .product-img {
-    width: 190px;
+  .contenedor__mercaderia .grid__productos .mercaderia-img {
+    width: 200px;
+    border: 4px double rgb(255, 82, 82);
+  }
+  .borde__tienda {
+    width: 100%;
   }
   .footer__producto {
     gap: 10px;
@@ -573,14 +621,5 @@ footer {
     text-shadow: -3px 3px 8px rgb(0, 0, 0);
     color: #800707;
     letter-spacing: 1px;
-  }
-  .section__contacto {
-    text-align: center;
-    justify-items: center;
-    align-items: center;
-  }
-  .section__contacto .contacto__div {
-    width: 90%;
-    padding: 0;
   }
 }/*# sourceMappingURL=estilo.css.map */
